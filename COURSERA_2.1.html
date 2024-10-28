@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 300px;
+            background-image: url(''); /* Original image URL */
+            background-size: cover;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="image" tabindex="0">Hover over an image below to display here.</div>
+    <img src="image1.jpg" alt="Image 1 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="image2.jpg" alt="Image 2 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="image3.jpg" alt="Image 3 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="image4.jpg" alt="Image 4 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="image5.jpg" alt="Image 5 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="image6.jpg" alt="Image 6 description" class="thumbnail" tabindex="0" 
+         onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+
+    <script src="script.js"></script>
+</body>
+</html>
